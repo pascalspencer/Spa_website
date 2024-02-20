@@ -1,0 +1,258 @@
+
+
+:root{
+    --color: #333; 
+    }
+    
+    body {
+      font-family: 'Red Hat Text', sans-serif;
+      margin:0;
+    }
+    
+    .container {
+      text-align: center;
+      color: rgb(248, 193, 193);
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url(spencer.jpg);
+      background-size: cover;
+      background-position: center;
+      
+      background-attachment: fixed;
+    }
+    
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      color: rgb(160, 2, 2);
+      text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    }
+    
+    p {
+      font-size: 1.3rem;
+      max-width: 52ch;
+      line-height: 1.5;
+      padding: 1em;
+      font-family: cursive;
+    }
+    
+    a {
+      display: inline-block;
+      padding: 1em 3.5em;
+      background-color: var(--color);
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 0.3em;
+      font-weight: 700;
+      letter-spacing: .5px;
+      font-size: .875rem;
+    }
+    
+    .blank,
+    .other {
+      width: 100%;
+      min-height: 15vh;
+      background-color: var(--color);
+    }
+    
+    .second {
+      background-image:url(image3.jpg);
+      background-attachment: fixed;
+      height: 1200px;
+    }
+    
+    .third {
+      text-align: center;
+      color: rgb(248, 193, 193);
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url(spa3.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    
+      ul {
+        position: relative;
+        left: 13%;
+        bottom: 5%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      
+      ul li {
+        list-style: none;
+      }
+      
+      ul li a {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        display: block;
+        text-align: center;
+        margin: 0 10px;
+        border-radius: 50%;
+        padding: 6px;
+        box-sizing: border-box;
+        text-decoration: none;
+        background: transparent;
+        transition: 0.5s;
+      }
+      
+      ul li a:hover {
+        text-decoration: none;
+        transform: scale(1.2);
+      }
+      
+      ul li a .fab {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: transparent;
+        border-radius: 50%;
+        line-height: calc(60px - 12px);
+        font-size: 24px;
+        color: #262626;
+        transition: 0.5s;
+      }
+      
+      ul li:nth-child(1) a:hover .fab {
+        color: #3b5998;
+      }
+      
+      ul li:nth-child(2) a:hover .fab {
+        color: #00aced;
+      }
+      
+      ul li:nth-child(3) a:hover .fab {
+        color: #dd4b39;
+      }
+      
+      ul li:nth-child(4) a:hover .fab {
+        color: #007bb6;
+      }
+      
+      ul li:nth-child(5) a:hover .fab {
+        color: #e4405f;
+      }
+      
+    }
+    
+    h3 {
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-top: 1em;
+      text-shadow: #FC0 1px 0 10px;
+    }
+    
+    .card > a {
+      margin-bottom: 2em;
+    }
+    
+    .foot {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: rgb(245, 5, 5);
+      max-width: 52ch;
+      line-height: 1.5;
+      padding: 1em;
+      font-family: cursive;
+      text-shadow: #FC0 1px 0 10px;
+    }
+    
+    .item {
+      display: flex;
+      max-width: 320px;
+      background-color: rgb(71, 67, 67);;
+      flex-direction: column;
+      align-items: center;
+      border-radius: .5em;
+      -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+      -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+      box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+    }
+    
+    .img {
+      width: 90%;
+      height: 200px;
+      background-color: lightgrey;
+      background-size: cover;
+      background-position: center;
+      margin-top: 20px;
+      border-radius: .3em;;
+    }
+    
+    .img-first {
+      background-image: url(image11.jpg);
+      height: 200;
+      width: 288;
+    }
+    
+    .img-second {
+      background-image: url(image2.jpeg);
+      height: 200;
+      width: 288;
+    }
+    
+    .img-third {
+      background-image: url(spa1.jpg);
+      height: 200;
+      width: 288;
+    }
+
+    .img-forth {
+      background-image: url(nail1.jpg);
+      height: 200;
+      width: 288;
+    }
+    
+    .second {
+      flex-direction: row;
+      gap: 1.6em;
+    }
+    
+    .item:hover {
+      background-color: rgb(51, 34, 34);
+      transform: scale(1.1);
+      transition: all 0.3s ease-out 0s;
+    }
+    
+    a:hover {
+      box-shadow: 0 0 15px rgb(131, 88, 88);
+      text-shadow: 0 0 5px rgb(51, 34, 34);
+      color: rgb(165, 138, 138);
+    }
+    
+.container {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+}    
+
+.blank {
+  opacity: 0;
+  transition: all 0.9s;
+  filter: blur(5px);
+  transform: translateY(100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.showBlank {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}

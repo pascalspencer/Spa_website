@@ -1,0 +1,208 @@
+body {
+    margin: 30px;
+    background-image: url(/static/app1.jpg);
+}
+
+h1 {
+    font-family: 'Red Hat Text', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    color: rgb(160, 2, 2);
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    margin-bottom: 50px;
+}
+
+.client-name {
+    display: grid;
+    justify-content: center;
+}
+
+#fName {
+    margin-bottom: 20px;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#lName {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#email {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 30px;
+    border: none;
+}
+
+#number {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#date {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 70px;
+    border: none;
+}
+
+#time {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#service {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.option {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.submit {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#fName, #lName, #email, #number, #date, #time, #service, .submit {
+    background-color: rgba(165, 42, 42, 0.842);
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.774); 
+    font-family: cursive;     
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.644);
+    opacity: 1;
+}
+
+.thanks {
+  margin-bottom: 100px;
+  background-color: rgba(165, 42, 42, 0.486);
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.774); 
+  font-family: cursive;     
+}
+
+
+ul {
+    position:absolute ;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 400%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  ul li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: rgba(165, 42, 42, 0.486);
+    transition: 0.5s;
+  }
+  
+  ul li a:hover {
+    text-decoration: none;
+    transform: scale(1.2);
+  }
+  
+  ul li a .fab {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: transparent;
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: 0.5s;
+  }
+  
+  ul li:nth-child(1) a:hover .fab {
+    color: #3b5998;
+  }
+  
+  ul li:nth-child(2) a:hover .fab {
+    color: #00aced;
+  }
+  
+  ul li:nth-child(3) a:hover .fab {
+    color: #dd4b39;
+  }
+  
+  ul li:nth-child(4) a:hover .fab {
+    color: #007bb6;
+  }
+  
+  ul li:nth-child(5) a:hover .fab {
+    color: #e4405f;
+  }
+
+  .home {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(20%);
+  }    
+  
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+#fName:hover, #lName:hover, #email:hover, #number:hover, #date:hover, #time:hover, #service:hover, .submit:hover {
+    transition: all 0.5s;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.301);
+    transform: scale(1.1);
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+  
+#flash-messages {
+  margin: 10px;
+}
+
+.flash-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.flash-message.error {
+  background-color: #ff9999;
+}
+
