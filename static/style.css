@@ -256,3 +256,68 @@
   filter: blur(0);
   transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1rem;
+      padding: 0.5em;
+  }
+
+  a {
+      padding: 0.75em 2.5em;
+      font-size: 0.75rem;
+  }
+
+  .third ul {
+      flex-direction: column;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+  }
+
+  .third ul li {
+      margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  p {
+      font-size: 0.875rem;
+  }
+
+  a {
+      padding: 0.5em 1.5em;
+      font-size: 0.625rem;
+  }
+
+  .third ul {
+      flex-direction: column;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+  }
+
+  .third ul li {
+      margin-bottom: 0.5em;
+  }
+
+  .img {
+      height: 150px;
+  }
+
+  .second {
+      flex-direction: column;
+  }
+
+  .item {
+      width: 90%;
+  }
+}

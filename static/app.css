@@ -206,3 +206,59 @@ ul {
   background-color: #ff9999;
 }
 
+@media (max-width: 768px) {
+  body {
+      margin: 20px;
+  }
+
+  h1 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+  }
+
+  #fName, #lName, #email, #number, #date, #time, #service, .submit {
+      font-size: 16px;
+      padding: 8px;
+  }
+
+  .thanks {
+      font-size: 24px;
+      margin-bottom: 80px;
+  }
+
+  ul {
+      bottom: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      margin: 10px;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+  }
+
+  #fName, #lName, #email, #number, #date, #time, #service, .submit {
+      font-size: 14px;
+      padding: 6px;
+  }
+
+  .thanks {
+      font-size: 20px;
+      margin-bottom: 60px;
+  }
+
+  ul {
+      bottom: 15%;
+      flex-direction: column;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  ul li {
+      margin-bottom: 1em;
+  }
+}
