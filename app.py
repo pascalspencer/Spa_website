@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import os
 from datetime import datetime
 import secrets
+from database import collection_name
 
 
 
@@ -59,6 +60,10 @@ def appointment():
 
                 writer.writerow(client_data)
 
+            record = collection_name.insert_one(client_data)
+            print(record)
+
+            
             sender = os.getenv('SENDER')
             receiver = {email}  
             subject = 'BOOKING APPOINTMENT'
